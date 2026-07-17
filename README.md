@@ -50,22 +50,41 @@ The project includes:
 
 # Repository Layout
 
-```
+```text
 .
+├── baseline/
+│
+├── baseline_with_fit/
+│
+├── iteration1_quantization/
+│   ├── IQ1_M/
+│   ├── IQ2_M/
+│   ├── Q2_K/
+│   ├── Q3_K_M/
+│   └── Q5_K_M/
+│
+├── iteration2_engine/
+│
+├── iteration3_kvcache/
+│   ├── IQ1_M_q4/
+│   ├── IQ2_M_q4/
+│   ├── IQ2_M_q8/
+│   ├── IQ2_S_q4/
+│   ├── IQ2_XS_q4/
+│   ├── Q2_K_q4/
+│   ├── Q3_K_M_q4/
+│   └── Q5_K_M_q4/
+│
+├── openclaw/
+│   └── openclaw.json
+│
 ├── scripts/
-│   ├── benchmark.py
-│   ├── start_llama_server.sh
-│   └── collect_metrics.py
-│
-├── tasks/
-│   ├── hello-world/
-│   ├── two-sum/
-│   └── refactor/
-│
-├── results/
-│   ├── baseline/
-│   ├── optimization-1/
-│   └── ...
+│   ├── results/
+│   ├── tasks/
+│   ├── collect_metrics.py
+│   ├── requirements.txt
+│   ├── reset_openclaw.sh
+│   └── start_llama_server.sh
 │
 └── README.md
 ```
@@ -242,7 +261,7 @@ The benchmark harness records:
 
 ---
 
-# Baseline Configuration
+# Baseline Configuration [:link:](./baseline)
 
 | Setting | Value |
 |---------|------|
@@ -273,7 +292,7 @@ The benchmark harness records:
 
 # Optimizations Evaluated
 
-## Experiment 1: Optimize model placement with --fit
+## Experiment 1: Optimize model placement with --fit 
 
 | Setting | Value |
 |---------|------|
@@ -311,7 +330,7 @@ Model placement:
 
 --fit automatically selected an improved GPU/CPU layer placement, increasing GPU residency from roughly 10 GiB to over 14 GiB. This likely reduced CPU-GPU data movement during inference and increased decode throughput by more than 3×.
 
-### Performance 
+### Performance [:link:](./baseline_with_fit)
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens | Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ---------: | ---------: | ----------: | :--: |
 | Hello World   |         32.11 |        17,931 |         1,543 | **1812.5** |  **86.33** |   **606.8** |   ✅  |
@@ -346,6 +365,8 @@ Model placement:
 ## Goal
 Determine the lowest model quantization that maintains benchmark correctness.
 
+# Results 
+
 | Setting | Value |
 |---------|------|
 | Model | Qwen_Qwen3.6-35B-A3B-GGUF:Q3_K_M |
@@ -354,10 +375,7 @@ Determine the lowest model quantization that maintains benchmark correctness.
 | fit | on |
 | fit-ctx | 24576 |
 
-
-# Results
-
-### Performance 
+### Performance [:link:](./interation1_quantization/Q3_K_M) 
 
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens |  Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ----------: | ---------: | ----------: | :--: |
@@ -399,7 +417,7 @@ All three tasks still completed successfully.
 | fit | on |
 | fit-ctx | 24576 |
 
-### Performance 
+### Performance [:link:](./interation1_quantization/IQ2_M)
 
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens |  Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ----------: | ---------: | ----------: | :--: |
@@ -447,7 +465,7 @@ This became the primary configuration used for subsequent tuning because it deli
 | fit | on |
 | fit-ctx | 24576 |
 
-### Performance 
+### Performance [:link:](./interation1_quantization/IQ1_M)
 
 | Task          | Wall Time (s) | Prompt TPS | Decode TPS | Overall TPS | Correctness |
 | ------------- | ------------: | ---------: | ---------: | ----------: | :---------: |
@@ -481,6 +499,8 @@ Although IQ1_M increased decode throughput by approximately 20%, the generated c
 
 Evaluate the effect of KV cache quantization on inference performance using the Qwen_Qwen3.6-35B-A3B-GGUF:IQ2_M model.
 
+### Performance [:link:](./interation1_quantization/IQ2_M_q8)
+
 | Setting | Value |
 |---------|------|
 | Model | Qwen_Qwen3.6-35B-A3B-GGUF:IQ2_M |
@@ -491,7 +511,7 @@ Evaluate the effect of KV cache quantization on inference performance using the 
 | ctk | q8_0 |
 | ctv | q8_0 |
 
-### Performance 
+
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens |  Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ----------: | ---------: | ----------: | :--: |
 | Hello World   |     **18.78** |        18,080 |         1,736 | **3445.78** | **183.20** |  **1044.5** |   ✅  |
@@ -531,7 +551,8 @@ This configuration produced performance nearly identical to the previous experim
 | ctv | q4_0 |
 
 
-### Performance 
+### Performance ### Performance [:link:](./interation1_quantization/IQ2_M_q4)
+
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens |  Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ----------: | ---------: | ----------: | :--: |
 | Hello World   |     **17.61** |        17,996 |         1,689 | **3794.22** | **192.94** |  **1117.7** |   ✅  |
@@ -539,6 +560,7 @@ This configuration produced performance nearly identical to the previous experim
 | Refactor Test |     **20.21** |         2,598 |         2,962 | **1979.85** | **187.84** |   **275.1** |   ✅  |
 
 ### Resource Usage
+
 | Task          | Peak VRAM (GiB) | Avg GPU Util (%) | Peak GPU Util (%) | Peak RAM (GiB) | Peak CPU (%) | Avg GPU Power (W) |
 | ------------- | --------------: | ---------------: | ----------------: | -------------: | -----------: | ----------------: |
 | Hello World   |       **14.45** |            68.61 |                99 |           7.59 |          7.3 |             203.3 |
