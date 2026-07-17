@@ -1,0 +1,101 @@
+{
+  "llamacpp:n_busy_slots_per_decode": {
+    "name": "llamacpp:n_busy_slots_per_decode",
+    "labels": {},
+    "type": "gauge",
+    "before": 1.0,
+    "after": 1.0,
+    "delta": null,
+    "counter_reset_detected": false
+  },
+  "llamacpp:n_decode_total": {
+    "name": "llamacpp:n_decode_total",
+    "labels": {},
+    "type": "counter",
+    "before": 4301.0,
+    "after": 8754.0,
+    "delta": 4453.0,
+    "counter_reset_detected": false
+  },
+  "llamacpp:n_tokens_max": {
+    "name": "llamacpp:n_tokens_max",
+    "labels": {},
+    "type": "counter",
+    "before": 20218.0,
+    "after": 22747.0,
+    "delta": 2529.0,
+    "counter_reset_detected": false
+  },
+  "llamacpp:predicted_tokens_seconds": {
+    "name": "llamacpp:predicted_tokens_seconds",
+    "labels": {},
+    "type": "gauge",
+    "before": 133.504,
+    "after": 130.377,
+    "delta": null,
+    "counter_reset_detected": false
+  },
+  "llamacpp:prompt_seconds_total": {
+    "name": "llamacpp:prompt_seconds_total",
+    "labels": {},
+    "type": "counter",
+    "before": 8.165,
+    "after": 11.282,
+    "delta": 3.117000000000001,
+    "counter_reset_detected": false
+  },
+  "llamacpp:prompt_tokens_seconds": {
+    "name": "llamacpp:prompt_tokens_seconds",
+    "labels": {},
+    "type": "gauge",
+    "before": 2418.98,
+    "after": 2041.66,
+    "delta": null,
+    "counter_reset_detected": false
+  },
+  "llamacpp:prompt_tokens_total": {
+    "name": "llamacpp:prompt_tokens_total",
+    "labels": {},
+    "type": "counter",
+    "before": 19751.0,
+    "after": 23034.0,
+    "delta": 3283.0,
+    "counter_reset_detected": false
+  },
+  "llamacpp:requests_deferred": {
+    "name": "llamacpp:requests_deferred",
+    "labels": {},
+    "type": "gauge",
+    "before": 0.0,
+    "after": 0.0,
+    "delta": null,
+    "counter_reset_detected": false
+  },
+  "llamacpp:requests_processing": {
+    "name": "llamacpp:requests_processing",
+    "labels": {},
+    "type": "gauge",
+    "before": 0.0,
+    "after": 0.0,
+    "delta": null,
+    "counter_reset_detected": false
+  },
+  "llamacpp:tokens_predicted_seconds_total": {
+    "name": "llamacpp:tokens_predicted_seconds_total",
+    "labels": {},
+    "type": "counter",
+    "before": 31.954,
+    "after": 66.622,
+    "delta": 34.668,
+    "counter_reset_detected": false
+  },
+  "llamacpp:tokens_predicted_total": {
+    "name": "llamacpp:tokens_predicted_total",
+    "labels": {},
+    "type": "counter",
+    "before": 4266.0,
+    "after": 8686.0,
+    "delta": 4420.0,
+    "counter_reset_detected": false
+  }
+}

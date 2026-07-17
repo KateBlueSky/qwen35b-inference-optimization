@@ -1,0 +1,137 @@
+[
+  {
+    "task": "hello-world",
+    "wall_time_seconds": 17.613,
+    "agent_exit_code": 0,
+    "agent_timed_out": false,
+    "correctness_passed": true,
+    "correctness_exit_code": 0,
+    "correctness_timed_out": false,
+    "perf_enabled": false,
+    "prometheus_metrics": {
+      "counter_deltas": {
+        "llamacpp:n_decode_total": 1710.0,
+        "llamacpp:n_tokens_max": 18395.0,
+        "llamacpp:prompt_seconds_total": 4.743,
+        "llamacpp:prompt_tokens_total": 17996.0,
+        "llamacpp:tokens_predicted_seconds_total": 8.754,
+        "llamacpp:tokens_predicted_total": 1689.0
+      },
+      "gauges_after": {
+        "llamacpp:n_busy_slots_per_decode": 1.0,
+        "llamacpp:predicted_tokens_seconds": 192.94,
+        "llamacpp:prompt_tokens_seconds": 3794.22,
+        "llamacpp:requests_deferred": 0.0,
+        "llamacpp:requests_processing": 0.0
+      }
+    },
+    "prometheus_parse_errors_before": 0,
+    "prometheus_parse_errors_after": 0,
+    "cpu_average_percent": 4.844,
+    "cpu_peak_percent": 7.3,
+    "ram_average_used_gib": 7.107,
+    "ram_peak_used_gib": 7.593,
+    "ram_peak_percent": 24.9,
+    "swap_peak_used_gib": 3.423,
+    "gpu_monitor_error": null,
+    "gpu_average_utilization_percent": 68.611,
+    "gpu_peak_utilization_percent": 99.0,
+    "gpu_average_memory_utilization_percent": 27.5,
+    "gpu_peak_vram_mib": 14801.0,
+    "gpu_peak_vram_gib": 14.454,
+    "gpu_average_vram_mib": 14795.444,
+    "gpu_average_power_watts": 203.297,
+    "gpu_peak_power_watts": 330.82,
+    "gpu_peak_temperature_c": 64.0
+  },
+  {
+    "task": "two-sum",
+    "wall_time_seconds": 18.171,
+    "agent_exit_code": 0,
+    "agent_timed_out": false,
+    "correctness_passed": true,
+    "correctness_exit_code": 0,
+    "correctness_timed_out": false,
+    "perf_enabled": false,
+    "prometheus_metrics": {
+      "counter_deltas": {
+        "llamacpp:n_decode_total": 2722.0,
+        "llamacpp:n_tokens_max": 1223.0,
+        "llamacpp:prompt_seconds_total": 0.984,
+        "llamacpp:prompt_tokens_total": 1703.0,
+        "llamacpp:tokens_predicted_seconds_total": 14.399,
+        "llamacpp:tokens_predicted_total": 2705.0
+      },
+      "gauges_after": {
+        "llamacpp:n_busy_slots_per_decode": 1.0,
+        "llamacpp:predicted_tokens_seconds": 189.781,
+        "llamacpp:prompt_tokens_seconds": 3439.67,
+        "llamacpp:requests_deferred": 0.0,
+        "llamacpp:requests_processing": 0.0
+      }
+    },
+    "prometheus_parse_errors_before": 0,
+    "prometheus_parse_errors_after": 0,
+    "cpu_average_percent": 5.089,
+    "cpu_peak_percent": 7.2,
+    "ram_average_used_gib": 7.728,
+    "ram_peak_used_gib": 7.985,
+    "ram_peak_percent": 26.2,
+    "swap_peak_used_gib": 3.423,
+    "gpu_monitor_error": null,
+    "gpu_average_utilization_percent": 76.778,
+    "gpu_peak_utilization_percent": 96.0,
+    "gpu_average_memory_utilization_percent": 36.333,
+    "gpu_peak_vram_mib": 14803.0,
+    "gpu_peak_vram_gib": 14.456,
+    "gpu_average_vram_mib": 14802.667,
+    "gpu_average_power_watts": 197.652,
+    "gpu_peak_power_watts": 237.32,
+    "gpu_peak_temperature_c": 59.0
+  },
+  {
+    "task": "refactor-test",
+    "wall_time_seconds": 20.213,
+    "agent_exit_code": 0,
+    "agent_timed_out": false,
+    "correctness_passed": true,
+    "correctness_exit_code": 0,
+    "correctness_timed_out": false,
+    "perf_enabled": false,
+    "prometheus_metrics": {
+      "counter_deltas": {
+        "llamacpp:n_decode_total": 2983.0,
+        "llamacpp:n_tokens_max": 989.0,
+        "llamacpp:prompt_seconds_total": 1.312,
+        "llamacpp:prompt_tokens_total": 2598.0,
+        "llamacpp:tokens_predicted_seconds_total": 15.769,
+        "llamacpp:tokens_predicted_total": 2962.0
+      },
+      "gauges_after": {
+        "llamacpp:n_busy_slots_per_decode": 1.0,
+        "llamacpp:predicted_tokens_seconds": 188.993,
+        "llamacpp:prompt_tokens_seconds": 3167.64,
+        "llamacpp:requests_deferred": 0.0,
+        "llamacpp:requests_processing": 0.0
+      }
+    },
+    "prometheus_parse_errors_before": 0,
+    "prometheus_parse_errors_after": 0,
+    "cpu_average_percent": 5.181,
+    "cpu_peak_percent": 7.3,
+    "ram_average_used_gib": 7.856,
+    "ram_peak_used_gib": 8.151,
+    "ram_peak_percent": 26.8,
+    "swap_peak_used_gib": 3.423,
+    "gpu_monitor_error": null,
+    "gpu_average_utilization_percent": 85.75,
+    "gpu_peak_utilization_percent": 97.0,
+    "gpu_average_memory_utilization_percent": 40.4,
+    "gpu_peak_vram_mib": 14802.0,
+    "gpu_peak_vram_gib": 14.455,
+    "gpu_average_vram_mib": 14802.0,
+    "gpu_average_power_watts": 204.306,
+    "gpu_peak_power_watts": 240.67,
+    "gpu_peak_temperature_c": 62.0
+  }
+]

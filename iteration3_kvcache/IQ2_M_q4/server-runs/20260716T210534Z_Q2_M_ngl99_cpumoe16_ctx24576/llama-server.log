@@ -1,0 +1,11 @@
+0.00.419.975 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.495.560 I srv    load_model: loading model 'bartowski/Qwen_Qwen3.6-35B-A3B-GGUF:Q2_M'
+0.02.156.909 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+0.02.156.912 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+0.02.156.912 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+0.02.287.887 I srv    load_model: loaded multimodal model, '/home/riverwest/.cache/huggingface/hub/models--bartowski--Qwen_Qwen3.6-35B-A3B-GGUF/snapshots/5c2410d71524f4f72b023ce8daf7a80528226d5f/mmproj-Qwen_Qwen3.6-35B-A3B-bf16.gguf'
+0.02.298.848 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 39424, kv_unified = 'false'
+0.02.307.097 I srv          init: chat template supports preserving reasoning, consider enabling it via --reasoning-preserve
+0.02.307.129 I srv  llama_server: model loaded
+0.02.307.133 I srv  llama_server: listening on http://127.0.0.1:8080

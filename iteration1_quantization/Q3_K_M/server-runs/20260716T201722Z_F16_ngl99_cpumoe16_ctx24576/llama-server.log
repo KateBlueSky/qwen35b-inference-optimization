@@ -1,0 +1,14 @@
+0.00.393.832 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.462.576 I srv    load_model: loading model 'bartowski/Qwen_Qwen3.6-35B-A3B-GGUF:F16'
+0.03.052.261 W llama_model_loader: tensor overrides to CPU are used with mmap enabled - consider using --no-mmap for better performance
+0.40.395.074 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+0.40.395.077 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+0.40.395.077 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+0.41.097.665 I srv    load_model: loaded multimodal model, '/home/riverwest/.cache/huggingface/hub/models--bartowski--Qwen_Qwen3.6-35B-A3B-GGUF/snapshots/5c2410d71524f4f72b023ce8daf7a80528226d5f/mmproj-Qwen_Qwen3.6-35B-A3B-bf16.gguf'
+0.41.801.713 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 24576, kv_unified = 'false'
+0.41.818.402 I srv          init: chat template supports preserving reasoning, consider enabling it via --reasoning-preserve
+0.41.819.584 I srv  llama_server: model loaded
+0.41.819.646 I srv  llama_server: listening on http://127.0.0.1:8080
+1.03.299.551 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+1.03.302.019 I slot launch_slot_: id  0 | task 1 | processing task, is_child = 0

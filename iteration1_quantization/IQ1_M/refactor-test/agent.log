@@ -1,0 +1,21 @@
+All **6 tests passed**. Here's what was created:
+
+**`calculator.py`** - Refactored with edge case handling:
+- Type checking (must be a list)
+- Empty list detection
+- Missing keys default to 0
+- Negative value validation
+- Missing key counters for valid orders
+
+**`test_calculator.py`** - 6 test cases:
+1. ✅ `test_normal_orders` - Normal processing (31.67 average)
+2. ✅ `test_empty_orders_raises_error` - ZeroDivisionError on empty list
+3. ✅ `test_invalid_data_type_raises_error` - TypeError on non-dict items
+4. ✅ `test_missing_keys_defaults` - Missing keys default to 0
+5. ✅ `test_invalid_value_raises_error` - ValueError on negative prices
+6. ✅ `test_invalid_quantity_raises_error` - Missing quantity defaults to 0
+
+The tests ran successfully:
+```
+============================= 6 passed in 0.00s ===============================
+```

@@ -1,0 +1,1 @@
+llama-server -hf bartowski/Qwen_Qwen3.6-35B-A3B-GGUF:IQ2_M --alias qwen-coder --fit on --fit-ctx 24576 -ctk q4_0 -ctv q4_0 -fa on --parallel 1 --host 127.0.0.1 --port 8080 --jinja --metrics --no-mmap 

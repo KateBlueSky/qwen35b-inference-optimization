@@ -1,0 +1,11 @@
+Both files are in place and all six tests pass. Here's a quick summary:
+
+**twoSum.py** — Uses a hash-map (dictionary) approach for O(n) time complexity. Iterates through the list once, checking if the complement has already been seen.
+
+**testTwoSum.py** — Six pytest tests covering:
+1. **Basic positive** — Classic `[2, 7, 11, 15], 9` case
+2. **Multiple solutions** — Ensures any valid pair works when duplicates exist
+3. **Negative numbers** — Mix of positive and negative values
+4. **Target zero** — Complementary values that sum to zero
+5. **No solution** — Returns `None` when no pair exists
+6. **First and last elements** — Pair involves boundary elements

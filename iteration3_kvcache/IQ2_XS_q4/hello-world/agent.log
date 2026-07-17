@@ -1,0 +1,10 @@
+Done. Here's what I created:
+
+**File:** `/home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/hello-world/hello.py`
+
+**Content:**
+```python
+print("Hello World")
+```
+
+Also copied to the workspace copy at `/home/riverwest/.openclaw/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/hello-world/hello.py`.

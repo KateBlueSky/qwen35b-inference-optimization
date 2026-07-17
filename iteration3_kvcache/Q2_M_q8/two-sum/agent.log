@@ -1,0 +1,11 @@
+All 6 tests pass. Here's a summary of what was created:
+
+**`twoSum.py`** — O(n) hash-map solution that returns the indices of two numbers summing to the target.
+
+**`testTwoSum.py`** — Six tests covering:
+1. **Basic case** — canonical `[2,7,11,15], target=9`
+2. **Negative numbers** — all-negative list summing to -9
+3. **Zero sum** — pair that adds to zero
+4. **Large numbers** — million-scale integers
+5. **Mixed signs** — positive and negative together
+6. **Long list** — answer buried deeper in the array

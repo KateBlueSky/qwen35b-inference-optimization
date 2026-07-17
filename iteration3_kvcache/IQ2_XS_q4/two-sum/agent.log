@@ -1,0 +1,6 @@
+Done. Both files are in `/home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/two-sum/`:
+
+- **`twoSum.py`** — hash-map O(n) two-sum implementation
+- **`testTwoSum.py`** — 6 pytest cases covering: basic, negatives, single-use, duplicates, large values, and no-solution
+
+All 6 tests pass.

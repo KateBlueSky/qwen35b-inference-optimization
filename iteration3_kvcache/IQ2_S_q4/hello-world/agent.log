@@ -1,0 +1,8 @@
+Done. `/home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/hello-world/hello.py` prints:
+
+```
+Hello World
+```
+
+Run with `python3 scripts/tasks/hello-world/hello.py`.
+⚠️ 🛠️ Exec failed: `python ~/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/hello-world/hello.py`

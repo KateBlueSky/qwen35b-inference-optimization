@@ -1,0 +1,45 @@
+{
+  "task": "two-sum",
+  "wall_time_seconds": 18.716,
+  "agent_exit_code": 0,
+  "agent_timed_out": false,
+  "correctness_passed": true,
+  "correctness_exit_code": 0,
+  "correctness_timed_out": false,
+  "perf_enabled": false,
+  "prometheus_metrics": {
+    "counter_deltas": {
+      "llamacpp:n_decode_total": 2638.0,
+      "llamacpp:n_tokens_max": 2098.0,
+      "llamacpp:prompt_seconds_total": 1.329,
+      "llamacpp:prompt_tokens_total": 1767.0,
+      "llamacpp:tokens_predicted_seconds_total": 13.745,
+      "llamacpp:tokens_predicted_total": 2613.0
+    },
+    "gauges_after": {
+      "llamacpp:n_busy_slots_per_decode": 1.0,
+      "llamacpp:predicted_tokens_seconds": 193.381,
+      "llamacpp:prompt_tokens_seconds": 3206.76,
+      "llamacpp:requests_deferred": 0.0,
+      "llamacpp:requests_processing": 0.0
+    }
+  },
+  "prometheus_parse_errors_before": 0,
+  "prometheus_parse_errors_after": 0,
+  "cpu_average_percent": 5.063,
+  "cpu_peak_percent": 7.3,
+  "ram_average_used_gib": 7.056,
+  "ram_peak_used_gib": 7.29,
+  "ram_peak_percent": 23.9,
+  "swap_peak_used_gib": 3.613,
+  "gpu_monitor_error": null,
+  "gpu_average_utilization_percent": 85.158,
+  "gpu_peak_utilization_percent": 96.0,
+  "gpu_average_memory_utilization_percent": 35.158,
+  "gpu_peak_vram_mib": 14806.0,
+  "gpu_peak_vram_gib": 14.459,
+  "gpu_average_vram_mib": 14805.895,
+  "gpu_average_power_watts": 193.708,
+  "gpu_peak_power_watts": 240.71,
+  "gpu_peak_temperature_c": 61.0
+}

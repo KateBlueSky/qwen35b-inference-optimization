@@ -1,0 +1,45 @@
+0.00.459.921 E common_download_get_hf_plan: no GGUF files found in repository bartowski/Qwen_Qwen3.6-35B-A3B-GGUF
+0.00.459.924 I Available GGUF files:
+0.00.459.924 I  - Qwen_Qwen3.6-35B-A3B-IQ1_M.gguf
+0.00.459.924 I  - Qwen_Qwen3.6-35B-A3B-IQ2_M.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-IQ2_S.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-IQ2_XS.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-IQ2_XXS.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-IQ3_M.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-IQ3_XS.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-IQ3_XXS.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-IQ4_NL.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-IQ4_XS.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-Q2_K.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-Q2_K_L.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-Q3_K_L.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-Q3_K_M.gguf
+0.00.459.925 I  - Qwen_Qwen3.6-35B-A3B-Q3_K_S.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q3_K_XL.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q4_0.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q4_1.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q4_K_L.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q4_K_M.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q4_K_S.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q5_K_L.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q5_K_M.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q5_K_S.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q6_K.gguf
+0.00.459.926 I  - Qwen_Qwen3.6-35B-A3B-Q6_K_L.gguf
+0.00.459.927 I  - Qwen_Qwen3.6-35B-A3B-Q8_0.gguf
+0.00.459.927 I  - Qwen_Qwen3.6-35B-A3B-bf16/Qwen_Qwen3.6-35B-A3B-bf16-00001-of-00002.gguf
+0.00.459.927 I  - Qwen_Qwen3.6-35B-A3B-bf16/Qwen_Qwen3.6-35B-A3B-bf16-00002-of-00002.gguf
+0.00.459.927 I  - Qwen_Qwen3.6-35B-A3B-imatrix.gguf
+0.00.459.927 I  - mmproj-Qwen_Qwen3.6-35B-A3B-bf16.gguf
+0.00.459.927 I  - mmproj-Qwen_Qwen3.6-35B-A3B-f16.gguf
+0.00.459.927 I  - mtp-Qwen_Qwen3.6-35B-A3B-Q4_0.gguf
+0.00.459.927 I  - mtp-Qwen_Qwen3.6-35B-A3B-Q8_0.gguf
+0.00.459.945 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.527.670 I srv    load_model: loading model 'bartowski/Qwen_Qwen3.6-35B-A3B-GGUF:IQ1_'
+0.00.527.697 E llama_model_load_from_file_impl: exactly one out metadata, path_model, and file must be defined
+0.00.531.276 E common_fit_params: encountered an error while trying to fit params to free device memory: failed to load model
+0.00.531.283 E llama_model_load_from_file_impl: exactly one out metadata, path_model, and file must be defined
+0.00.531.285 E cmn  common_init_: failed to load model ''
+0.00.531.289 E srv    load_model: failed to load model, ''
+0.00.531.290 I srv    operator(): operator(): cleaning up before exit...
+0.00.531.948 E srv  llama_server: exiting due to model loading error

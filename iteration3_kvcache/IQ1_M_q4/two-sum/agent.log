@@ -1,0 +1,12 @@
+Both files have been created in `/home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/two-sum/`:
+
+- **twoSum.py** — Uses a hash map for O(n) time complexity to find two indices that sum to a target
+- **testTwoSum.py** — 6 pytest tests covering:
+  1. Standard case
+  2. No solution (error handling)
+  3. Multiple possible pairs
+  4. Negative numbers
+  5. Large list performance
+  6. Pair found near end
+
+All 6 tests pass. 🎉

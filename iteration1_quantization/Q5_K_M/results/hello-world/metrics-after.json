@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "llamacpp:prompt_tokens_total": {
+      "help": "Number of prompt tokens processed.",
+      "type": "counter"
+    },
+    "llamacpp:prompt_seconds_total": {
+      "help": "Prompt process time",
+      "type": "counter"
+    },
+    "llamacpp:tokens_predicted_total": {
+      "help": "Number of generation tokens processed.",
+      "type": "counter"
+    },
+    "llamacpp:tokens_predicted_seconds_total": {
+      "help": "Predict process time",
+      "type": "counter"
+    },
+    "llamacpp:n_decode_total": {
+      "help": "Total number of llama_decode() calls",
+      "type": "counter"
+    },
+    "llamacpp:n_tokens_max": {
+      "help": "Largest observed n_tokens.",
+      "type": "counter"
+    },
+    "llamacpp:prompt_tokens_seconds": {
+      "help": "Average prompt throughput in tokens/s.",
+      "type": "gauge"
+    },
+    "llamacpp:predicted_tokens_seconds": {
+      "help": "Average generation throughput in tokens/s.",
+      "type": "gauge"
+    },
+    "llamacpp:requests_processing": {
+      "help": "Number of requests processing.",
+      "type": "gauge"
+    },
+    "llamacpp:requests_deferred": {
+      "help": "Number of requests deferred.",
+      "type": "gauge"
+    },
+    "llamacpp:n_busy_slots_per_decode": {
+      "help": "Average number of busy slots per llama_decode() call",
+      "type": "gauge"
+    }
+  },
+  "samples": {
+    "llamacpp:prompt_tokens_total": {
+      "name": "llamacpp:prompt_tokens_total",
+      "labels": {},
+      "value": 17905.0,
+      "timestamp": null,
+      "type": "counter"
+    },
+    "llamacpp:prompt_seconds_total": {
+      "name": "llamacpp:prompt_seconds_total",
+      "labels": {},
+      "value": 11.449,
+      "timestamp": null,
+      "type": "counter"
+    },
+    "llamacpp:tokens_predicted_total": {
+      "name": "llamacpp:tokens_predicted_total",
+      "labels": {},
+      "value": 1509.0,
+      "timestamp": null,
+      "type": "counter"
+    },
+    "llamacpp:tokens_predicted_seconds_total": {
+      "name": "llamacpp:tokens_predicted_seconds_total",
+      "labels": {},
+      "value": 19.824,
+      "timestamp": null,
+      "type": "counter"
+    },
+    "llamacpp:n_decode_total": {
+      "name": "llamacpp:n_decode_total",
+      "labels": {},
+      "value": 1526.0,
+      "timestamp": null,
+      "type": "counter"
+    },
+    "llamacpp:n_tokens_max": {
+      "name": "llamacpp:n_tokens_max",
+      "labels": {},
+      "value": 17811.0,
+      "timestamp": null,
+      "type": "counter"
+    },
+    "llamacpp:prompt_tokens_seconds": {
+      "name": "llamacpp:prompt_tokens_seconds",
+      "labels": {},
+      "value": 1563.89,
+      "timestamp": null,
+      "type": "gauge"
+    },
+    "llamacpp:predicted_tokens_seconds": {
+      "name": "llamacpp:predicted_tokens_seconds",
+      "labels": {},
+      "value": 76.1199,
+      "timestamp": null,
+      "type": "gauge"
+    },
+    "llamacpp:requests_processing": {
+      "name": "llamacpp:requests_processing",
+      "labels": {},
+      "value": 0.0,
+      "timestamp": null,
+      "type": "gauge"
+    },
+    "llamacpp:requests_deferred": {
+      "name": "llamacpp:requests_deferred",
+      "labels": {},
+      "value": 0.0,
+      "timestamp": null,
+      "type": "gauge"
+    },
+    "llamacpp:n_busy_slots_per_decode": {
+      "name": "llamacpp:n_busy_slots_per_decode",
+      "labels": {},
+      "value": 1.0,
+      "timestamp": null,
+      "type": "gauge"
+    }
+  },
+  "parse_errors": []
+}

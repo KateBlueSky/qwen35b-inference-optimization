@@ -1,0 +1,15 @@
+Both files created and all 6 tests pass (✅ 6/6).
+
+**`twoSum.py`** — O(n) hash-map solution that returns the pair of indices whose values sum to the target. Raises `ValueError` if no pair exists.
+
+**`testTwoSum.py`** — six pytest cases covering:
+| # | Test | What it exercises |
+|---|------|-------------------|
+| 1 | `test_basic` | Simple positive integers |
+| 2 | `test_negative_numbers` | Negative values |
+| 3 | `test_same_element_twice` | Pairing non-adjacent elements |
+| 4 | `test_target_zero` | Zero target |
+| 5 | `test_large_input` | 10 K-element list |
+| 6 | `test_no_valid_pair` | Exception path |
+
+Path: `/home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/two-sum/`

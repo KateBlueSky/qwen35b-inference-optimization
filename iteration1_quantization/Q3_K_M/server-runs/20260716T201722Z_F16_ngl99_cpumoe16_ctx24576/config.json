@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "20260716T201722Z",
+  "run_name": "20260716T201722Z_F16_ngl99_cpumoe16_ctx24576",
+  "model_repo": "bartowski/Qwen_Qwen3.6-35B-A3B-GGUF",
+  "model_quantization": "F16",
+  "model_alias": "qwen-coder",
+  "gpu_layers": 99,
+  "cpu_moe_layers": 16,
+  "context_size": 24576,
+  "kv_cache_type_k": "q4_0",
+  "kv_cache_type_v": "q4_0",
+  "flash_attention": true,
+  "jinja": true,
+  "metrics_enabled": true,
+  "host": "127.0.0.1",
+  "port": 8080
+}

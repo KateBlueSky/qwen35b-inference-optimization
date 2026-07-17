@@ -1,0 +1,13 @@
+Both files are created and all 6 tests pass. Here's what's in the directory:
+
+**`twoSum.py`** — hash-map O(n) implementation that returns the indices of two numbers summing to the target (raises `ValueError` if no pair exists).
+
+**`testTwoSum.py`** — six pytest cases:
+| # | Test | What it covers |
+|---|------|----------------|
+| 1 | `test_basic_two_sum` | Classic `[2, 7, 11, 15]`, target 9 |
+| 2 | `test_two_sum_with_negative_numbers` | Negative integers |
+| 3 | `test_two_sum_large_numbers` | Large integers |
+| 4 | `test_two_sum_with_duplicates` | Same value at different indices |
+| 5 | `test_two_sum_no_solution` | Raises `ValueError` when no pair matches |
+| 6 | `test_two_sum_four_elements` | Middle-index solution pair |

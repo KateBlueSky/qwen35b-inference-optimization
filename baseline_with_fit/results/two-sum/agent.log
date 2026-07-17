@@ -1,0 +1,8 @@
+Done — both files are in place and all 6 tests pass:
+
+| File | Path |
+|---|---|
+| `twoSum.py` | `/home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/two-sum/twoSum.py` |
+| `testTwoSum.py` | `/home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/two-sum/testTwoSum.py` |
+
+**twoSum** uses a hash-map for O(n) time. The six tests cover: classic case, negative numbers, same-value pair, unordered indices, no-solution error, and a 10k-element performance check.
