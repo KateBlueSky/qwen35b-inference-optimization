@@ -261,7 +261,7 @@ The benchmark harness records:
 
 ---
 
-# Baseline Configuration [:link:](./baseline)
+# Baseline Configuration 
 
 | Setting | Value |
 |---------|------|
@@ -271,7 +271,7 @@ The benchmark harness records:
 | Flash Attention | Enabled |
 | mmap | Disabled |
 
-## Performance 
+## Performance [:link:](./baseline)
 | Task          | Wall Time (s) | Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ---------: | ---------: | ----------: | :--: |
 | Hello World   |         76.58 |     1088.9 |      26.27 |       253.3 |   ✅  |
@@ -375,7 +375,7 @@ Determine the lowest model quantization that maintains benchmark correctness.
 | fit | on |
 | fit-ctx | 24576 |
 
-### Performance [:link:](./interation1_quantization/Q3_K_M) 
+### Performance [:link:](./iteration1_quantization/Q3_K_M) 
 
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens |  Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ----------: | ---------: | ----------: | :--: |
@@ -417,7 +417,7 @@ All three tasks still completed successfully.
 | fit | on |
 | fit-ctx | 24576 |
 
-### Performance [:link:](./interation1_quantization/IQ2_M)
+### Performance [:link:](./iteration1_quantization/IQ2_M)
 
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens |  Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ----------: | ---------: | ----------: | :--: |
@@ -465,7 +465,7 @@ This became the primary configuration used for subsequent tuning because it deli
 | fit | on |
 | fit-ctx | 24576 |
 
-### Performance [:link:](./interation1_quantization/IQ1_M)
+### Performance [:link:](./iteration1_quantization/IQ1_M)
 
 | Task          | Wall Time (s) | Prompt TPS | Decode TPS | Overall TPS | Correctness |
 | ------------- | ------------: | ---------: | ---------: | ----------: | :---------: |
@@ -499,7 +499,7 @@ Although IQ1_M increased decode throughput by approximately 20%, the generated c
 
 Evaluate the effect of KV cache quantization on inference performance using the Qwen_Qwen3.6-35B-A3B-GGUF:IQ2_M model.
 
-### Performance [:link:](./interation1_quantization/IQ2_M_q8)
+### Performance [:link:](./iteration3_kvcache/IQ2_M_q8)
 
 | Setting | Value |
 |---------|------|
@@ -551,7 +551,7 @@ This configuration produced performance nearly identical to the previous experim
 | ctv | q4_0 |
 
 
-### Performance ### Performance [:link:](./interation1_quantization/IQ2_M_q4)
+### Performance ### Performance [:link:](./iteration3_kvcache/IQ2_M_q4)
 
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens |  Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ----------: | ---------: | ----------: | :--: |
