@@ -551,7 +551,7 @@ This configuration produced performance nearly identical to the previous experim
 | ctv | q4_0 |
 
 
-### Performance ### Performance [:link:](./iteration3_kvcache/IQ2_M_q4)
+### Performance [:link:](./iteration3_kvcache/IQ2_M_q4)
 
 | Task          | Wall Time (s) | Prompt Tokens | Output Tokens |  Prompt TPS | Decode TPS | Overall TPS | Pass |
 | ------------- | ------------: | ------------: | ------------: | ----------: | ---------: | ----------: | :--: |
