@@ -1141,9 +1141,7 @@ def main() -> None:
                 (
                     "Create hello.py that prints Hello World and save "
                     "it in "
-                    "/home/riverwest/workspace/"
-                    "claw-performance-Qwen3.6-35B-A3B/"
-                    "scripts/tasks/hello-world/hello.py"
+                    "current-directory/hello-world/hello.py"
                 ),
             ],
             "correctness_command": [
@@ -1170,7 +1168,7 @@ def main() -> None:
                     "two numbers in a list that sum to a target. Also "
                     "create testTwoSum.py containing six pytest tests. "
                     "Save both files in the directory "
-                    "/home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/two-sum"
+                    "current-directory/two-sum"
                 ),
             ],
             "correctness_command": [
@@ -1204,7 +1202,7 @@ def main() -> None:
                     "make sure to handle edge cases "
                     "and create 6 pytest for the code. "
                     "place the code in a python file named calculator.py "
-                    "in the directory /home/riverwest/workspace/claw-performance-Qwen3.6-35B-A3B/scripts/tasks/refactor"
+                    "in the directory current-directory/refactor"
                 ),
             ],
             "correctness_command": [
